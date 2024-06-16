@@ -1,0 +1,462 @@
+
+body {
+  min-height: 100%;
+  background: #e3f2fd;
+}
+nav {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+.logo .menu-icon {
+  color: #333;
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.logo .logo-name {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+}
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+nav.open .sidebar {
+  left: 0;
+}
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+.sidebar-content .list {
+  list-style: none;
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.lists .nav-link:hover {
+  background-color: #4070f4;
+}
+.nav-link .icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #707070;
+}
+
+.product-logo{
+  margin-right: 10px;
+}
+
+.inventory-logo{
+  margin-right: 10px;
+}
+
+.supplier-logo{
+  margin-right: 10px;
+}
+
+.category-logo{
+  margin-right: 10px;
+}
+
+.transaction-logo{
+  margin-right: 10px;
+}
+.about-logo{
+  margin-right: 10px;
+}
+.nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay {
+  opacity: 1;
+  left: 260px;
+  pointer-events: auto;
+}
+
+/*dashboard*/
+.product-card{
+  font-size: 25px;
+}
+
+.product-card i{
+  margin-right: 10px;
+}
+
+.supplier-card{
+  font-size: 25px;
+}
+
+.supplier-card i{
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.currentStock-card
+{
+  font-size: 25px;
+}
+
+.currentStock-card i
+{
+  margin-right: 10px;
+}
+
+.dashboard{
+  margin-top: 8rem;
+}
+.about-card {
+  margin-top: 8rem;
+}
+.text-dashboard{
+  padding-top: 50px;
+}
+
+.group-pic{
+  padding-left: 10px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+
+}
+.statusDashboard{
+  font-weight: bold;
+}
+
+.product-status{
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+.supplier-status{
+  margin-right: 3rem;
+}
+
+.inventory-status{
+  margin-right: 3rem;
+}
+
+.dashboard{
+  display: flex;
+  justify-content: center;
+}
+
+
+.table-dashboard{
+  margin-top: 10px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.table-delivery{
+  margin-top: 10px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*end of dashboard*/
+
+.table-inventory{
+  margin-top: 10px;
+  line-height: 50px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titleInventory{    
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  
+}
+
+.table-product{
+  margin-top: 10px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.title-product{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.title-transaction{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+.titleSuppliers{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.titleCategory{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/*end of Tables*/
+
+.btn-edit i{
+  margin-right: 5px;
+}
+
+.btn-add /*add inventory,product and supplier*/ {
+  margin-top: 13px;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+
+.btn-add i {
+  margin-right: 5px;
+
+}
+
+.text-delete{
+  text-decoration: none;
+  color: white;
+  text-wrap: nowrap;
+}
+
+.btn-delete i{
+  margin-right: 5px;
+}
+
+.btn-edit{
+  text-wrap: nowrap;
+  margin-right: 10px;
+}
+
+.table-supplier{
+  margin-top: 10px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.table-category{
+  margin-top: 10px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.loginRegisterTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22vh;
+}
+
+.reqSupply-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.text-transaction{
+  margin-top: 6rem;
+
+}
+
+.container-transaction{
+  padding-left: 20.5rem;
+
+}
+
+.text-about{
+  margin-top: 100px;
+  margin-bottom: auto;
+}
+
+.card-footer-about{
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.container-table {
+  max-height: 500px;
+  overflow-y: auto;
+  position: relative;
+}
+
+#tableDashboard th, #tableDashboard td  {
+  text-align: center;
+  font-size: 15px;
+} 
+
+#tableDelivery th, #tableDelivery td  {
+  text-align: center;
+  font-size: 15px;
+}
+
+#tableProduct th, #tableProduct td  {
+  text-align: center;
+  font-size: 15px;
+} 
+
+#tableInventory th, #tableInventory  td{
+  text-align: center;
+  text-wrap: nowrap;
+  font-size: 15px;
+}
+
+#tableSupplier th, #tableSupplier td{
+  text-align: center;
+}
+
+#tableDashboard thead th {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+
+}#tableDashboard {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tableSupplier thead th {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+}
+
+#tableSupplier{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tableInventory thead th{
+ position: sticky;
+ top: 0;
+ z-index: 12;
+}
+
+#tableInventory{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tableCategory thead th{
+  position: sticky;
+  top: 0;
+  z-index: 12;
+ }
+ 
+ #tableCategory{
+   width: 100%;
+   border-collapse: collapse;
+ }
+
+ 
+ 
+ #tableReq{
+   width: 100%;
+   border-collapse: collapse;
+ }
+ 
+ .group-card-about {
+  min-height: 150px;
+}
+.card-footer-about {
+  align-items: center;
+  text-align: center;
+}
+.group-pic {
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-ReqTable{
+  margin-top: 4rem;
+}
+
+.deliveryLogs{
+  font-weight: bold;
+}
+
+.table-Req{
+  line-height: 50px;
+}
+
+.text-dashboard-logs{
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+.back-arrow{
+  color: grey;
+  font-size: 30px;
+  
+}
+
+.user-text{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.request-logo{
+  margin-right: 10px;
+  font-weight: 25px;
+}
