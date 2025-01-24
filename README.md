@@ -8,4 +8,4 @@ USERNAME: admin
 PASSWORD: admin
 
 upload sql to database
-name the database as supplysystem# SupplyStream
+name it as SupplyStream
